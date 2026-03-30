@@ -1,6 +1,7 @@
 # Apuntes_de_Clase_T.A.P
 # Unidad I. 
-# "Interfaz gráfica de usuario"
+"Interfaz gráfica de usuario"
+-
 Introducción
 -
 
@@ -470,3 +471,141 @@ Manejo de eventos. (s. f.). Studocu. https://www.studocu.com/es-mx/document/inst
 Esdai. (s. f.). ¿Qué es la gestión de eventos y cuál es su importancia? https://blog.up.edu.mx/gdl/posgrados-esdai/que-es-la-gestion-de-eventos-y-cual-es-su-importancia
 
 Manejo de componentes graficos de control. (s. f.). Studocu. https://www.studocu.com/es-mx/document/instituto-tecnologico-de-cerro-azul/ingenieria-en-sistemas-computacionales/manejo-de-componentes-graficos-de-control/37649441
+
+
+# UNIDAD 2: COMPONENTES Y LIBRERÍAS
+2.1 Definición conceptual de componentes, paquetes y librerías
+-
+
+- Componentes:
+Un componente es el elemento básico de una interfaz gráfica. Permite la interacción entre el usuario y la aplicación, ya sea recibiendo datos o mostrando información.
+
+Ejemplos de componentes:
+-Botones
+-Barras de desplazamiento
+-Etiquetas
+-Listas
+-Cajas de selección
+-Campos de texto
+
+Los componentes no funcionan de forma aislada, sino que se organizan dentro de contenedores, los cuales también son componentes y permiten estructurar la interfaz.
+
+-Contenedores
+
+Los contenedores son componentes que pueden almacenar y organizar otros componentes dentro de la interfaz gráfica.
+
+-Paquetes (Packages)
+
+Los paquetes en Java son una forma de organizar clases, interfaces y otros elementos según su funcionalidad o relación.
+Sirven para:
+-Mantener el código ordenado
+-Facilitar la reutilización
+-Evitar conflictos de nombres
+
+-Pasos para crear un paquete:
+1.	Crear una carpeta (paquete).
+2.	Guardar las clases dentro de esa carpeta.
+3.	Declarar el paquete en cada clase:
+4.	package NombreDeLaCarpeta;
+5.	Definir las clases como públicas:
+6.	public class NombreClase
+7.	Importar el paquete donde se necesite:
+8.	import NombreDeLaCarpeta.*;
+
+-Librerías
+
+Las librerías son conjuntos de clases ya desarrolladas que se pueden reutilizar en diferentes aplicaciones.
+Permiten:
+-Reutilizar código
+-Ahorrar tiempo de desarrollo
+-Mantener una mejor organización
+
+Las librerías pueden ser:
+-Estáticas (incluidas en el programa)
+-Dinámicas (se cargan en tiempo de ejecución)
+
+2.2 Uso de librerías proporcionadas por el lenguaje
+-
+
+Java proporciona múltiples librerías integradas que facilitan el desarrollo:
+-java.lang: Clases básicas del lenguaje (se importa automáticamente).
+-java.io: Manejo de entrada y salida de datos.
+-java.net: Programación de redes (URL, sockets, IP).
+-java.util: Utilidades como listas, fechas, colecciones y números aleatorios.
+-java.awt: Componentes gráficos básicos y manejo de eventos.
+-javax.swing: Componentes gráficos avanzados (mejora de AWT).
+-java.sql: Conexión y manejo de bases de datos.
+-java.sound.midi: Manejo de audio y música.
+-java.math: Operaciones matemáticas avanzadas.
+-java.applet: Creación de applets para web.
+
+2.3 Creación de componentes definidos por el usuario
+-
+
+Los desarrolladores pueden crear sus propios componentes personalizados.
+
+-Swing
+
+Swing es un conjunto de componentes gráficos en Java que:
+-Son más ligeros que AWT
+-Son independientes de la plataforma
+-Permiten crear interfaces más avanzadas
+-Archivos JAR
+
+Un archivo JAR (Java Archive) permite empaquetar múltiples archivos en uno solo.
+
+Puede incluir:
+-Clases (.class)
+-Imágenes
+-Sonidos
+-Recursos del programa
+
+2.4 Creación y uso de paquetes/librerías definidas por el usuario
+-
+
+Los paquetes permiten agrupar elementos relacionados como:
+-Clases
+-Interfaces
+-Excepciones
+-Constantes
+
+Esto facilita la reutilización y organización del código.
+
+-Creación de un paquete
+
+package NombrePaquete;
+
+-Estructura de un archivo Java
+1.	Declaración del paquete (opcional)
+2.	Importaciones (opcional)
+3.	Clase pública (obligatoria)
+4.	Clases privadas (opcional)
+
+-Subpaquetes
+Los paquetes pueden contener subpaquetes para organizar mejor el código.
+Ejemplo de estructura:
+
+Paquete/Subpaquete
+
+-CLASSPATH
+
+Es una variable de entorno que indica dónde buscar las clases y paquetes en Java.
+
+-Uso de paquetes
+
+Importar todo un paquete.
+
+import Paquete.
+
+Importar una clase específica.
+
+import Paquete.Subpaquete.Clase.
+
+-Uso sin importar:
+
+Paquete.Subpaquete.Clase.metodo();
+
+-Ámbito (Visibilidad)
+
+Los paquetes también ayudan a controlar el acceso a clases y métodos, permitiendo definir qué elementos son públicos o privados.
+
