@@ -524,6 +524,8 @@ Las librerías pueden ser:
 -Estáticas (incluidas en el programa)
 -Dinámicas (se cargan en tiempo de ejecución)
 
+Ejemplo en codigo link: https://github.com/24680221/Visualizaci-n-de-datos-mediante-gr-ficas-interactivas-en-una-interfaz-gr-fica-con-Flet
+
 2.2 Uso de librerías proporcionadas por el lenguaje
 -
 
@@ -559,6 +561,12 @@ Puede incluir:
 -Imágenes
 -Sonidos
 -Recursos del programa
+
+- ejemplos de usos de componetes, mediantes links:
+  - ejemplo 1: https://github.com/24680221/Unidad-2-Componentes-Definidos-por-el-Usuario-en-Flet
+  - ejemplo 2: https://github.com/24680221/componentes-personalizados-y-organizaci-n-de-la-interfaz-mediante-clases-en-Flet
+  - ejemplo 3: https://github.com/24680221/Creaci-n-de-componentes-personalizados-utilizando-dataclass
+
 
 2.4 Creación y uso de paquetes/librerías definidas por el usuario
 -
@@ -609,3 +617,10 @@ Paquete.Subpaquete.Clase.metodo();
 
 Los paquetes también ayudan a controlar el acceso a clases y métodos, permitiendo definir qué elementos son públicos o privados.
 
+Ejemplo de codigo en genral empalpando todos los temas: https://github.com/24680221/juego-interactivo
+
+Bibliografias
+-
+
+- Perfil, V. (2017, 20 julio). Tópicos avanzados de programación ll. https://lojijni123.blogspot.com/2017/07/topicos-avanzados-de-programacion-ll.html
+- Prezi, E. C. O. (s. f.). 2.1 Definición Conceptual de paquetes, componentes y librerias. prezi.com. https://prezi.com/p/zuky5ofdt-av/21-definicion-conceptual-de-paquetes-componentes-y-librerias/
